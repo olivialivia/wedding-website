@@ -5,16 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Seaweed+Script&display=swap"
+            rel="stylesheet"
+        />
         <title>Document</title>
     </head>
     <body>
         <header>
             <div class="header-top">
-                <div class="nav-item"><a href="*">Date, time and place</a></div>
-                <div class="nav-item"><a href="*">RSVP</a></div>
-                <div class="nav-item"><a href="*">Accomodation</a></div>
-                <div class="nav-item"><a href="*">Getting there</a></div>
-                <div class="nav-item"><a href="*">Contact Us</a></div>
+                <div class="nav-item"><a href="#section1">Date, time and place</a></div>
+                <div class="nav-item"><a href="#section2">RSVP</a></div>
+                <div class="nav-item"><a href="#section3">Accomodation</a></div>
+                <div class="nav-item"><a href="#section3">Getting there</a></div>
+                <div class="nav-item"><a href="#section4">Contact Us</a></div>
             </div>
         </header>
 
@@ -26,33 +32,33 @@
             </section>
 
             <section id="main">
-                <div class="container details">
-                    <section>
+                <div>
+                    <section id="bright">
                         <div class="container triple">
-                            <div class="col1-3">
-                                <h4>Where</h4>
+                            <div class="col1-3 border-line" id="section1">
+                                <h3>Where</h3>
                                 <p>The Essex Barn</p>
                                 <p>at Channels Estate, Chelmsford</p>
                             </div>
-                            <div class="col1-3">
-                                <h4>When</h4>
+                            <div class="col1-3 border-line">
+                                <h3>When</h3>
                                 <p>Sunday, 19th June 2022</p>
                             </div>
                             <div class="col1-3">
-                                <h4>Schedule</h4>
-                                <p>Guests Arriving 1:00pm</p>
-                                <p>Wedding Ceremony 1:30pm</p>
-                                <p>Wedding Breakfast 3:30pm</p>
-                                <p>Evening Party 18:00</p>
+                                <h3>Schedule</h3>
+                                <p>13:00 Guests Arriving</p>
+                                <p>13:30 Wedding Ceremony</p>
+                                <p>15:30 Wedding Breakfast</p>
+                                <p>18:00 Evening Party</p>
                             </div>
                         </div>
                     </section>
 
-                    <section>
+                    <section id="dark">
                         <div class="container triple">
                             <div class="col1-3"></div>
-                            <div class="col1-3">
-                                <h4>RSVP</h4>
+                            <div class="col1-3" id="section2">
+                                <h3>RSVP</h3>
                                 <form>
                                     <label>
                                         <input
@@ -113,10 +119,10 @@
                         </div>
                     </section>
 
-                    <section>
+                    <section id="bright">
                         <div class="container double">
-                            <div class="col1-2">
-                                <h4>Accomodation</h4>
+                            <div class="col1-2" id="section3">
+                                <h3>Accomodation</h3>
                                 <p>
                                     If you would like to stay overnight, we can reserve a room for
                                     you at the Channels Lodge, just a 2 minutes walk from the venue.
@@ -124,8 +130,8 @@
                                 <p>Channels Lodge</p>
                                 <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
                             </div>
-                            <div class="col1-2">
-                                <h4>How to get there</h4>
+                            <div class="col1-2" id="section3">
+                                <h3>How to get there</h3>
                                 <p>Channels Weddings at Channels Estate</p>
                                 <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
                                 <iframe
@@ -140,20 +146,18 @@
                         </div>
                     </section>
 
-                    <section>
-                        <div class="container">
+                    <section id="dark">
+                        <div class="container bottom" id="section4">
                             <p>
                                 If you have any question, please do not hesitate to
                                 <a href="mailto:kegvia@gmail.com?subject=Wedding Query"
-                                    >email us
-                                </a>
+                                    ><b>email us</b></a
+                                >.
                             </p>
                         </div>
                     </section>
                 </div>
             </section>
-
-            <section id="bottom"></section>
         </div>
 
         <scrpit src="index.js"></scrpit>
