@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+@media screen and (min-width: 620px) {
+    body {
+        font-size: 1.5rem;
+        line-height: 1.31579;
+    }
+}
+
+#top {
+    background-color: rgb(240, 239, 238);
+    background-image: url(./Graphics/Amy-Sampson.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-top {
+    border-bottom: rgba(20, 20, 20, 0.664);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.nav-item {
+    padding-top: 20px;
+    flex: 1 1 auto;
+    text-transform: uppercase;
+}
+
+
+.names {
+    padding: 250px;
+}
+
+
+.container,
+.grid {
+    background-color: rgb(240, 239, 238);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+
+.triple {
+    flex-wrap: nowrap;
+}
+
+.double {
+    flex-wrap: nowrap;
+}
+
+.col1-3 {
+    flex-grow: 1;
+}
+
+.col2-3 {
+    flex-grow: 2;
+}
+
+.col1-2 {
+    flex-grow: 1;
+}
+
+
+/*
+h1 {
+    font-size: 4.5em;
+    color: white;
+    text-transform: uppercase;
+}
+*/
+
+h2,
+h3,
+h4 {
+    font: 200 "Trebuchet MS", Arial, sans-serif;
+    color: rgb(73, 131, 112);
+}
+
+a {
+    color: rgb(73, 131, 112);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(42, 77, 65);
+}
+
+/*
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ 8fae71 
+
+
+
+
+#main-container {
+    padding-top: 10px;
+}
+
+   overflow-x: hidden;
+    white-space: nowrap;
