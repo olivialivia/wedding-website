@@ -33,7 +33,7 @@
 
             <section id="main">
                 <div>
-                    <section id="bright">
+                    <section id="bright-details">
                         <div class="container triple">
                             <div class="col1-3 border-line" id="section1">
                                 <h3>Where</h3>
@@ -54,9 +54,9 @@
                         </div>
                     </section>
 
-                    <section id="dark">
+                    <section id="dark-form">
                         <div class="container triple">
-                            <div class="col1-3"></div>
+                            <div class="col1-3 left-img"></div>
                             <div class="col1-3" id="section2">
                                 <h3>RSVP</h3>
                                 <form>
@@ -71,6 +71,7 @@
                                         <input
                                             type="number"
                                             name="quantity-ad"
+                                            value="adults"
                                             placeholder="Number of adults"
                                         /> </label
                                     ><br />
@@ -78,6 +79,7 @@
                                         <input
                                             type="number"
                                             name="quantity-ch"
+                                            value="children"
                                             placeholder="Number of children"
                                         /> </label
                                     ><br />
@@ -86,52 +88,61 @@
                                             type="email"
                                             name="email"
                                             placeholder="Email address"
-                                        /> </label
-                                    ><br />
-                                    <label>
-                                        <input type="text" placeholder="When are you arriving?" />
+                                        />
                                     </label>
                                     <br />
                                     <label>
                                         <input
                                             type="text"
+                                            name="accomodation-req"
                                             placeholder="Do you require accomodation?"
                                         />
                                     </label>
                                     <br />
 
-                                    <input type="radio" name="coming" value="accept" selected />
+                                    <input type="radio" name="ifcoming" value="accept" selected />
                                     <label>Accepts with Pleasure </label>
                                     <br />
-                                    <input type="radio" name="coming" value="decline" />
+                                    <input type="radio" name="ifcoming" value="decline" />
                                     <label> Declines with Regrets </label>
 
                                     <label>
                                         <p>Dietary requirements/allergies</p>
-                                        <textarea name="diet-req"></textarea>
+                                        <textarea name="diet-req" value="diet-allergy"></textarea>
                                     </label>
                                     <br />
 
-                                    <button>Confirm</button>
+                                    <button id="btn-confirm">Confirm</button>
                                 </form>
                             </div>
-                            <div class="col1-3"></div>
+                            <div class="col1-3 right-img"></div>
                         </div>
                     </section>
 
-                    <section id="bright">
+                    <section id="bright-accomo">
                         <div class="container double">
-                            <div class="col1-2" id="section3">
+                            <div class="col1-2 border-line" id="section3">
                                 <h3>Accomodation</h3>
                                 <p>
                                     If you would like to stay overnight, we can reserve a room for
-                                    you at the Channels Lodge, just a 2 minutes walk from the venue.
+                                    you at the beautiful Channels Lodge, just a 2 minutes walk from
+                                    the venue. 
+                                    <p>Your stay will include breakfast in the morning.</p>
                                 </p>
+                                <br />
                                 <p>Channels Lodge</p>
                                 <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
+                                <img src="Graphics/channelslodge.jpg" alt="Channels Lodge" />
                             </div>
                             <div class="col1-2" id="section3">
                                 <h3>How to get there</h3>
+                                <p>There is a free on-site parking for those choosing to drive.</p>
+                                <p>
+                                    Alternatively, you can travel to Chelmsford using public
+                                    transport then getting a taxi, Uber (10min drive) or a bus
+                                    (about 32min).
+                                </p>
+                                <br />
                                 <p>Channels Weddings at Channels Estate</p>
                                 <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
                                 <iframe
@@ -146,10 +157,10 @@
                         </div>
                     </section>
 
-                    <section id="dark">
-                        <div class="container bottom" id="section4">
-                            <p>
-                                If you have any question, please do not hesitate to
+                    <section id="dark-footer">
+                        <div class="container-bottom" id="section4">
+                            <p> Thank you for visiting. We look forward to spending our special day with you!</p>
+                            <p> If you have any question, please do not hesitate to
                                 <a href="mailto:kegvia@gmail.com?subject=Wedding Query"
                                     ><b>email us</b></a
                                 >.
