@@ -7,11 +7,12 @@
         <link rel="stylesheet" href="index.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script src="index.js"></script>
         <link
             href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Seaweed+Script&display=swap"
             rel="stylesheet"
         />
-        <title>Document</title>
+        <title>Kegan and Olivia</title>
     </head>
     <body>
         <header>
@@ -19,7 +20,7 @@
                 <div class="nav-item"><a href="#section1">Date, time and place</a></div>
                 <div class="nav-item"><a href="#section2">RSVP</a></div>
                 <div class="nav-item"><a href="#section3">Accomodation</a></div>
-                <div class="nav-item"><a href="#section3">Getting there</a></div>
+                <div class="nav-item"><a href="#section5">Getting there</a></div>
                 <div class="nav-item"><a href="#section4">Contact Us</a></div>
             </div>
         </header>
@@ -27,7 +28,7 @@
         <div id="main-container">
             <section id="top">
                 <div class="picture-top">
-                    <h1 class="names">Kegan & Olivia</h1>
+                    <img src="./Graphics/background.jpeg" class="header-img" alt="Woods" />
                 </div>
             </section>
 
@@ -37,35 +38,52 @@
                         <div class="container triple">
                             <div class="col1-3 border-line" id="section1">
                                 <h3>Where</h3>
-                                <div><a href="#section3"><img src="Graphics/pin.jpeg" class="icons" > </a></div>
+                                <div>
+                                    <a href="#section3"
+                                        ><img src="Graphics/Mappin.jpeg" class="icons" />
+                                    </a>
+                                </div>
                                 <p>The Essex Barn</p>
                                 <p>at Channels Estate, Chelmsford</p>
                             </div>
+
                             <div class="col1-3 border-line">
                                 <h3>When</h3>
-                                <div><a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Y2RqM2VkaGs2MHEzaWI5b2NnbzY4YjlrNjBzbThiOXA3MHMzMGI5aDZrcTZhb3I0NzRyamVkcjU2MCBrZWd2aWFAbQ&amp;tmsrc=kegvia%40gmail.com"><img src="Graphics/calendar.jpeg" class="icons" > </a></div>
+                                <div>
+                                    <a
+                                        target="_blank"
+                                        href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Y2RqM2VkaGs2MHEzaWI5b2NnbzY4YjlrNjBzbThiOXA3MHMzMGI5aDZrcTZhb3I0NzRyamVkcjU2MCBrZWd2aWFAbQ&amp;tmsrc=kegvia%40gmail.com"
+                                        ><img src="Graphics/Google.jpeg" class="icons" />
+                                    </a>
+                                </div>
+                                <p class="small-print">(Press to add to Google Calendar)</p>
                                 <p>Sunday, 19th June 2022</p>
-                                <p class="small-print">(Add to Google Calendar by pressing the icon above)</p>
                             </div>
-                            <div class="col1-3">
+
+                            <div class="col1-3 border-line">
                                 <h3>Schedule</h3>
-                                <div><img src="Graphics/alarmclock.jpeg" class="icons" ></div>
-                                <ul class="schedule-list">
-                                    <li><p>13:00 Guests Arriving</p></li>
-                                    <li><p>13:30 Wedding Ceremony</p></li>
-                                    <li><p>15:30 Wedding Breakfast</p></li>
-                                    <li><p>18:00 Evening Party</p></li>                
-                                </ul>
+                                <div>
+                                    <ul class="schedule-list">
+                                        <li><p>13:00&nbsp;&nbsp;&nbsp;&nbsp;Guests Arriving</p></li>
+                                        <li>
+                                            <p>13:30&nbsp;&nbsp;&nbsp;&nbsp;Wedding Ceremony</p>
+                                        </li>
+                                        <li>
+                                            <p>15:30&nbsp;&nbsp;&nbsp;&nbsp;Wedding Breakfast</p>
+                                        </li>
+                                        <li><p>18:00&nbsp;&nbsp;&nbsp;&nbsp;Evening Party</p></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </section>
 
                     <section id="dark-form">
-                        <div class="container triple">
-                            <div class="col1-3 left-img"></div>
-                            <div class="col1-3" id="section2">
+                        <div class="container quadra">
+                            <div class="col1-4"></div>
+                            <div class="col2-4 dark-middle" id="section2">
                                 <h3>RSVP</h3>
-                                <form method="POST">
+                                <form id="rsvp-form" method="POST">
                                     <label>
                                         <input
                                             type="text"
@@ -101,12 +119,12 @@
                                         <input
                                             type="text"
                                             name="accomodation-req"
-                                            placeholder="Do you require accomodation?"
+                                            placeholder="Do you require accomodation? See price below."
                                         />
                                     </label>
                                     <br />
 
-                                    <input type="radio" name="ifcoming" value="accept" selected />
+                                    <input type="radio" name="ifcoming" value="accept" checked />
                                     <label>Accepts with Pleasure </label>
                                     <br />
                                     <input type="radio" name="ifcoming" value="decline" />
@@ -118,11 +136,13 @@
                                     </label>
                                     <br />
 
-                                    <button id="btn-confirm">SUBMIT</button>
-                                    <div id="submit-form"></div>
+                                    <button id="btn-confirm" type="submit" value="SUBMIT">
+                                        SUBMIT
+                                    </button>
                                 </form>
+                                <div><p id="submitted-form"></p></div>
                             </div>
-                            <div class="col1-3 right-img"></div>
+                            <div class="col1-4"></div>
                         </div>
                     </section>
 
@@ -133,26 +153,37 @@
                                 <p>
                                     If you would like to stay overnight, we can reserve a room for
                                     you at the beautiful Channels Lodge, just a 2 minutes walk from
-                                    the venue. 
-                                    <p>Your stay will include breakfast in the morning.</p>
+                                    the venue.
                                 </p>
+
+                                <p>
+                                    Double room with ensuite bathroom is £60 for our guests <br />
+                                    & includes breakfast in the morning.
+                                </p>
+
                                 <br />
                                 <p>Channels Lodge</p>
                                 <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
-                                <img src="Graphics/channelslodge.jpg" alt="Channels Lodge" />
+                                <img
+                                    src="Graphics/channelslodge.jpg"
+                                    class="acc-img"
+                                    alt="Channels Lodge"
+                                />
                             </div>
-                            <div class="col1-2" id="section3">
+                            <div class="col1-2" id="section5">
                                 <h3>How to get there</h3>
                                 <p>There is a free on-site parking for those choosing to drive.</p>
                                 <p>
                                     Alternatively, you can travel to Chelmsford using public
-                                    transport then getting a taxi, Uber (10min drive) or a bus
-                                    (about 32min).
+                                    transport then getting <br />a taxi/Uber (10min drive) or a bus
+                                    (about 30min).
                                 </p>
                                 <br />
                                 <p>Channels Weddings at Channels Estate</p>
                                 <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
+
                                 <iframe
+                                    id="map"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2468.8003418735025!2d0.49611581593240267!3d51.773257099050404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8eeb39610ac19%3A0x3ec069cb67d38439!2sChannels%20Weddings%20at%20Channels%20Estate!5e0!3m2!1sen!2suk!4v1642700496353!5m2!1sen!2suk"
                                     width="600"
                                     height="450"
@@ -166,8 +197,12 @@
 
                     <section id="dark-footer">
                         <div class="container-bottom" id="section4">
-                            <p> Thank you for visiting. We look forward to spending our special day with you!</p>
-                            <p> If you have any question, please do not hesitate to
+                            <p>
+                                Thank you for visiting. We look forward to spending our special day
+                                with you!
+                            </p>
+                            <p>
+                                If you have any question, please do not hesitate to
                                 <a href="mailto:kegvia@gmail.com?subject=Wedding Query"
                                     ><b>email us</b></a
                                 >.
@@ -177,7 +212,12 @@
                 </div>
             </section>
         </div>
-
-        <scrpit src="index.js"></scrpit>
     </body>
 </html>
+
+<!--   <div><img src="Graphics/alarmclock.jpeg" class="icons" ></div> 
+
+ <li><p>13:00</p><p>Guests Arriving</p></li>
+                                    <li><p>13:30</p><p>Wedding Ceremony</p></li>
+                                    <li><p>15:30</p><p>Wedding Breakfast</p></li>
+                                    <li><p>18:00</p><p>Evening Party</p></li>                -->
