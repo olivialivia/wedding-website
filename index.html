@@ -28,7 +28,11 @@
         <div id="main-container">
             <section id="top">
                 <div class="picture-top">
-                    <img src="./Graphics/background.jpeg" class="header-img" alt="Woods" />
+                    <img
+                        src="./Graphics/background.jpeg"
+                        class="header-img"
+                        alt="Green countryside"
+                    />
                 </div>
             </section>
 
@@ -54,6 +58,7 @@
                             <div class="col1-3 border-line">
                                 <h3>Schedule</h3>
                                 <div class="col1-3-text">
+                                    <div><img src="Graphics/line.png" class="line" /></div>
                                     <ul class="schedule-list">
                                         <li><p>13:00&nbsp;&nbsp;&nbsp;&nbsp;Guests Arriving</p></li>
                                         <li>
@@ -88,18 +93,19 @@
                             <div class="col1-4"></div>
                             <div class="col2-4 dark-middle" id="section2">
                                 <h3>R S V P</h3>
+                                <p>Please submit by 28th February</p>
                                 <form id="rsvp-form" method="POST">
                                     <label>
                                         <input
                                             type="text"
-                                            name="name"
+                                            name="name-surname"
                                             placeholder="Name & Surname"
                                         /> </label
                                     ><br />
                                     <label>
                                         <input
                                             type="number"
-                                            name="quantity-ad"
+                                            name="quantity-adults"
                                             value="adults"
                                             placeholder="Number of adults"
                                         /> </label
@@ -107,7 +113,7 @@
                                     <label>
                                         <input
                                             type="number"
-                                            name="quantity-ch"
+                                            name="quantity-children"
                                             value="children"
                                             placeholder="Number of children"
                                         /> </label
@@ -123,12 +129,18 @@
                                     <label>
                                         <input
                                             type="text"
-                                            name="accomodation-req"
+                                            name="accomodation-required"
                                             placeholder="Do you require accomodation?"
                                         />
                                     </label>
                                     <br />
-
+                                    <label
+                                        ><input
+                                            type="text"
+                                            name="diet-requirements"
+                                            placeholder="Dietary requirements / allergies"
+                                    /></label>
+                                    <br />
                                     <input type="radio" name="ifcoming" value="accept" checked />
                                     <label> Wouldn't miss it for the world! </label>
                                     <br />
@@ -138,7 +150,7 @@
                                     </label>
 
                                     <label>
-                                        <p>Dietary requirements/allergies</p>
+                                        <p>Anything else we should know?</p>
                                         <textarea name="diet-req" value="diet-allergy"></textarea>
                                     </label>
                                     <br />
@@ -179,8 +191,8 @@
                                     />
                                 </div>
                             </div>
-                            <div class="col1-2" id="section5">
-                                <h3>How to get there</h3>
+                            <div class="col1-2">
+                                <h3 id="section5">How to get there</h3>
                                 <div class="col1-2-text">
                                     <p>
                                         There is a free on-site parking for those choosing to drive.
@@ -215,7 +227,7 @@
                                 with you!
                             </p>
                             <p>
-                                If you have any question, please do not hesitate to
+                                If you have any questions, please do not hesitate to
                                 <a href="mailto:kegvia@gmail.com?subject=Wedding Query"
                                     ><b>email us</b></a
                                 >.

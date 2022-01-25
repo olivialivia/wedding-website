@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	http.HandleFunc("/submit", func(rw http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/_wedding/submit", func(rw http.ResponseWriter, r *http.Request) {
 		rw.Header().Set("Access-Control-Allow-Origin", "*")
 		rw.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
 		rw.Header().Set("Access-Control-Allow-Headers", "*")
