@@ -36,33 +36,24 @@
                 <div>
                     <section id="bright-details">
                         <div class="container triple">
-                            <div class="col1-3 border-line" id="section1">
-                                <h3>Where</h3>
-                                <div>
-                                    <a href="#section3"
-                                        ><img src="Graphics/Mappin.jpeg" class="icons" />
-                                    </a>
-                                </div>
-                                <p>The Essex Barn</p>
-                                <p>at Channels Estate, Chelmsford</p>
-                            </div>
-
                             <div class="col1-3 border-line">
                                 <h3>When</h3>
-                                <div>
-                                    <a
-                                        target="_blank"
-                                        href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Y2RqM2VkaGs2MHEzaWI5b2NnbzY4YjlrNjBzbThiOXA3MHMzMGI5aDZrcTZhb3I0NzRyamVkcjU2MCBrZWd2aWFAbQ&amp;tmsrc=kegvia%40gmail.com"
-                                        ><img src="Graphics/Google.jpeg" class="icons" />
-                                    </a>
+                                <div class="col1-3-text">
+                                    <div>
+                                        <a
+                                            target="_blank"
+                                            href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=Y2RqM2VkaGs2MHEzaWI5b2NnbzY4YjlrNjBzbThiOXA3MHMzMGI5aDZrcTZhb3I0NzRyamVkcjU2MCBrZWd2aWFAbQ&amp;tmsrc=kegvia%40gmail.com"
+                                            ><img src="Graphics/Google.jpeg" class="icons" />
+                                        </a>
+                                    </div>
+                                    <p class="small-print">(Press for Google Calendar)</p>
+                                    <p>Sunday, 19th June 2022</p>
                                 </div>
-                                <p class="small-print">(Press to add to Google Calendar)</p>
-                                <p>Sunday, 19th June 2022</p>
                             </div>
 
                             <div class="col1-3 border-line">
                                 <h3>Schedule</h3>
-                                <div>
+                                <div class="col1-3-text">
                                     <ul class="schedule-list">
                                         <li><p>13:00&nbsp;&nbsp;&nbsp;&nbsp;Guests Arriving</p></li>
                                         <li>
@@ -75,6 +66,20 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <div class="col1-3 border-line" id="section1">
+                                <h3>Where</h3>
+                                <div class="col1-3-text">
+                                    <div>
+                                        <a href="#section3"
+                                            ><img src="Graphics/Mappin.jpeg" class="icons" />
+                                        </a>
+                                    </div>
+                                    <p class="small-print">(Press for Google Maps)</p>
+                                    <p>The Essex Barn</p>
+                                    <p>at Channels Estate, Chelmsford</p>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -82,7 +87,7 @@
                         <div class="container quadra">
                             <div class="col1-4"></div>
                             <div class="col2-4 dark-middle" id="section2">
-                                <h3>RSVP</h3>
+                                <h3>R S V P</h3>
                                 <form id="rsvp-form" method="POST">
                                     <label>
                                         <input
@@ -119,16 +124,18 @@
                                         <input
                                             type="text"
                                             name="accomodation-req"
-                                            placeholder="Do you require accomodation? See price below."
+                                            placeholder="Do you require accomodation?"
                                         />
                                     </label>
                                     <br />
 
                                     <input type="radio" name="ifcoming" value="accept" checked />
-                                    <label>Accepts with Pleasure </label>
+                                    <label> Wouldn't miss it for the world! </label>
                                     <br />
                                     <input type="radio" name="ifcoming" value="decline" />
-                                    <label> Declines with Regrets </label>
+                                    <label>
+                                        Will celebrate from afar and forever regret this decision
+                                    </label>
 
                                     <label>
                                         <p>Dietary requirements/allergies</p>
@@ -149,48 +156,54 @@
                     <section id="bright-accomo">
                         <div class="container double">
                             <div class="col1-2 border-line" id="section3">
-                                <h3>Accomodation</h3>
-                                <p>
-                                    If you would like to stay overnight, we can reserve a room for
-                                    you at the beautiful Channels Lodge, just a 2 minutes walk from
-                                    the venue.
-                                </p>
+                                <h3>Accommodation</h3>
+                                <div class="col1-2-text">
+                                    <p>
+                                        If you would like to stay overnight, we can reserve a room
+                                        for you at the beautiful Channels Lodge, just a 2 minutes
+                                        walk from the venue.
+                                    </p>
 
-                                <p>
-                                    Double room with ensuite bathroom is £60 for our guests <br />
-                                    & includes breakfast in the morning.
-                                </p>
+                                    <p>
+                                        Double room with ensuite bathroom is £60 for our guests &
+                                        includes breakfast in the morning.
+                                    </p>
 
-                                <br />
-                                <p>Channels Lodge</p>
-                                <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
-                                <img
-                                    src="Graphics/channelslodge.jpg"
-                                    class="acc-img"
-                                    alt="Channels Lodge"
-                                />
+                                    <br />
+                                    <p>Channels Lodge</p>
+                                    <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
+                                    <img
+                                        src="Graphics/channelslodge.jpg"
+                                        class="acc-img"
+                                        alt="Channels Lodge"
+                                    />
+                                </div>
                             </div>
                             <div class="col1-2" id="section5">
                                 <h3>How to get there</h3>
-                                <p>There is a free on-site parking for those choosing to drive.</p>
-                                <p>
-                                    Alternatively, you can travel to Chelmsford using public
-                                    transport then getting <br />a taxi/Uber (10min drive) or a bus
-                                    (about 30min).
-                                </p>
-                                <br />
-                                <p>Channels Weddings at Channels Estate</p>
-                                <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
+                                <div class="col1-2-text">
+                                    <p>
+                                        There is a free on-site parking for those choosing to drive.
+                                    </p>
+                                    <p>
+                                        Alternatively, you can travel to Chelmsford using public
+                                        transport then getting a taxi/Uber (10min) or a bus (about
+                                        30min).
+                                    </p>
+                                    <br />
+                                    <p>Channels Weddings at Channels Estate</p>
+                                    <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
 
-                                <iframe
-                                    id="map"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2468.8003418735025!2d0.49611581593240267!3d51.773257099050404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8eeb39610ac19%3A0x3ec069cb67d38439!2sChannels%20Weddings%20at%20Channels%20Estate!5e0!3m2!1sen!2suk!4v1642700496353!5m2!1sen!2suk"
-                                    width="600"
-                                    height="450"
-                                    style="border: 0"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                ></iframe>
+                                    <iframe
+                                        id="map"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2468.8003418735025!2d0.49611581593240267!3d51.773257099050404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8eeb39610ac19%3A0x3ec069cb67d38439!2sChannels%20Weddings%20at%20Channels%20Estate!5e0!3m2!1sen!2suk!4v1642700496353!5m2!1sen!2suk"
+                                        width="600"
+                                        height="450"
+                                        style="border: 0"
+                                        allowfullscreen=""
+                                        loading="lazy"
+                                    ></iframe>
+                                </div>
                             </div>
                         </div>
                     </section>
