@@ -82,6 +82,7 @@ body {
 .col1-3 {
     flex: 1 1 30%;
     min-width: 350px;
+    padding: 1% 0 1%;
 }
 .col1-3-text {
     padding: 0 5% 0 5%;
@@ -132,7 +133,7 @@ ul {
     list-style: none;
 	text-align: left;
     margin: 0px 0px; 
-    padding-inline-start: 22px;
+    padding-inline-start: 25px;
 }
 
 button {
@@ -188,7 +189,7 @@ textarea {
     height: auto;
     width: 250px;
     padding: 0px 0px;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 h1,
