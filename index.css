@@ -9,12 +9,12 @@ body {
 }
 
 #top {
-    background-color: rgb(240, 239, 238);
+    
 }
 
 #bright-details {
-    background-color: rgb(245, 245, 245);
-    margin: 85px 0px 120px 0px;
+    background-image: rgb(245, 245, 245);
+    margin: 70px 0px 90px 0px;
 }
 #bright-accomo {
     background-color: rgb(245, 245, 245);
@@ -43,30 +43,35 @@ body {
 }
 
 .nav-item {
-    padding: 20px 20px 20px 20px;
-    flex: 1 1 auto;
+    padding: 20px 5px 20px 5px;
+    flex: 1 1 18%;
     text-transform: uppercase;
 }
 
 
 .picture-top {
+    background-image: url(./Graphics/background.jpeg); 
+    background-size: 100% auto;
+    height: 0;
+    padding-top: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
-.header-img {
-    position: center;
-    max-width: 100%;
-}
+
 @media (max-width: 800px) {
-    .header-img {
-        height: 100%;
-        transform: scale(1.5);
-        
+    .picture-top {
+        background-image: url(./Graphics/background-mobile.jpeg);   
+        background-size:100% auto;
+        height:0;
+        padding-top: 120%;
+        background-repeat: no-repeat;
     }
    
     .nav-item {
         font-size: 1rem;
-        padding: 5px 10px 5px 10px;
-        flex: 1 1 auto;
+        padding: 5px 5px 5px 5px;
+        flex: 1 1 20%;
         text-transform: uppercase;
     }
 }
@@ -209,7 +214,7 @@ h4 {
 
 h3 {
     color: rgb(73, 131, 99);
-    font-size: 220%;
+    font-size: 200%;
     padding: 5px 10px 5px 10px;
 }
 
@@ -258,3 +263,9 @@ colour 8fae71
 
    overflow-x: hidden;
     white-space: nowrap;
+
+
+     .header-img {
+        height: 100%;
+        transform: scale(1.5);
+    }
