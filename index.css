@@ -48,11 +48,10 @@ body {
 .picture-top {
     background-image: url(./Graphics/background.jpeg); 
     background-size: 100% auto;
-    height: 0;
+    height: 1;
     padding-top: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 @media (max-width: 800px) {
