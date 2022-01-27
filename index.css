@@ -131,6 +131,7 @@ ul {
 button {
     cursor: pointer;
     font-size: 1rem;
+    font-weight: 300;
     padding: 12px 20px;
     margin: 8px 0 25px 0;
     border-radius: 3px;
@@ -193,12 +194,15 @@ h4 {
 
 h3 {
     color: rgb(73, 131, 99);
+    font-weight: 500;
     font-size: 2.7rem;
     padding: 5px 10px 5px 10px;
 }
 
+label,
 p {
-    color: black
+    color: rgba(20, 20, 20) ;
+    font-weight: 300;
 }
 .small-print {
     font-size:  0.8rem;
@@ -208,7 +212,7 @@ p {
 a {
     color: rgb(73, 131, 99);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
     cursor: pointer;
 }
 
