@@ -8,10 +8,6 @@ body {
     line-height: 1.31579;
 }
 
-#top {
-    
-}
-
 #bright-details {
     background-image: rgb(245, 245, 245);
     margin: 70px 0px 90px 0px;
@@ -214,7 +210,7 @@ h4 {
 
 h3 {
     color: rgb(73, 131, 99);
-    font-size: 200%;
+    font-size: 2rem;
     padding: 5px 10px 5px 10px;
 }
 
