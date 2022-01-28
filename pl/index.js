@@ -21,7 +21,8 @@ window.addEventListener("load", function () {
         }
 
         if (!success) {
-            log.textContent = "There was a problem submitting the form. Please retry or email us.";
+            log.textContent =
+                "Wystąpił problem. Spróbuj wysłać jeszcze raz lub skontaktuj się z nami poniżej.";
         }
     });
 });
