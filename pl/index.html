@@ -4,24 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="/index.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap"
             rel="stylesheet"
         />
-        <script src="index.js"></script>
+        <script src="./index.js"></script>
         <title>Kegan and Olivia</title>
     </head>
     <body>
         <header>
             <div class="header-top">
-                <div class="nav-item"><a href="#section1">When and where</a></div>
+                <div class="nav-item"><a href="#section1">Gdzie i kiedy</a></div>
                 <div class="nav-item"><a href="#section2">RSVP</a></div>
-                <div class="nav-item"><a href="#section5">Getting there</a></div>
-                <div class="nav-item"><a href="#section3">Accommodation</a></div>
-                <div class="nav-item"><a href="#section4">Contact Us</a></div>
+                <div class="nav-item"><a href="#section5">Mapa i transport</a></div>
+                <div class="nav-item"><a href="#section3">Nocleg</a></div>
+                <div class="nav-item"><a href="#section4">Kontakt</a></div>
             </div>
         </header>
 
@@ -35,48 +35,50 @@
                     <section id="bright-details">
                         <div class="container triple">
                             <div class="col1-3 border-line">
-                                <h3 id="section1">When</h3>
+                                <h3 id="section1">Kiedy</h3>
                                 <div class="col1-3-text">
                                     <div>
                                         <a
                                             target="_blank"
-                                            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+Kegan+%26+Olivia&dates=20220619T130000UTC/20220620T000000UTC&details=https://wedding.kegsay.com/&location= Channels+Weddings+at+Channels+Estate,+Pratt's+Farm+Ln,+Little+Waltham,+Chelmsford+CM3+3PT,+UK&sf=true&output=xml"
-                                            ><img src="Graphics/Google.jpeg" class="icons" />
+                                            href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NjEwZjdvOXYzMGxldHBnbDh0a25oaDFyYTMga2VndmlhQG0&amp;tmsrc=kegvia%40gmail.com"
+                                            ><img src="/Graphics/Google.jpeg" class="icons" />
                                         </a>
                                     </div>
-                                    <p class="small-print">(Press for Google Calendar)</p>
-                                    <p>Sunday, 19th June 2022</p>
+                                    <p class="small-print">(Dodaj do Google Kalendarza)</p>
+                                    <p>Niedziela, 19ty Czerwca 2022</p>
                                 </div>
                             </div>
 
                             <div class="col1-3 border-line">
-                                <h3>Schedule</h3>
+                                <h3>Plan</h3>
                                 <div class="col1-3-text">
-                                    <div><img src="Graphics/line.png" class="line" /></div>
+                                    <div><img src="/Graphics/line.png" class="line" /></div>
                                     <ul class="schedule-list">
-                                        <li><p>13:00&nbsp;&nbsp;&nbsp;&nbsp;Guests Arriving</p></li>
+                                        <li><p>13:00&nbsp;&nbsp;&nbsp;&nbsp;Przyjazd gości</p></li>
                                         <li>
-                                            <p>13:30&nbsp;&nbsp;&nbsp;&nbsp;Wedding Ceremony</p>
+                                            <p>13:30&nbsp;&nbsp;&nbsp;&nbsp;Ceremonia</p>
                                         </li>
                                         <li>
-                                            <p>15:30&nbsp;&nbsp;&nbsp;&nbsp;Wedding Breakfast</p>
+                                            <p>16:00&nbsp;&nbsp;&nbsp;&nbsp;Obiad weselny</p>
                                         </li>
-                                        <li><p>18:00&nbsp;&nbsp;&nbsp;&nbsp;Evening Party</p></li>
+                                        <li>
+                                            <p>18:00&nbsp;&nbsp;&nbsp;&nbsp;Wieczorna zabawa</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="col1-3 border-line">
-                                <h3>Where</h3>
+                                <h3>Gdzie</h3>
                                 <div class="col1-3-text">
                                     <div>
                                         <a href="#section5"
-                                            ><img src="Graphics/Mappin.jpeg" class="icons" />
+                                            ><img src="/Graphics/Mappin.jpeg" class="icons" />
                                         </a>
                                     </div>
-                                    <p class="small-print">(Press for Google Maps)</p>
+                                    <p class="small-print">(Zobacz na Google Maps)</p>
                                     <p>The Essex Barn</p>
-                                    <p>at Channels Estate, Chelmsford</p>
+                                    <p>Channels Estate, Chelmsford</p>
                                 </div>
                             </div>
                         </div>
@@ -87,13 +89,13 @@
                             <div class="col1-4"></div>
                             <div class="col2-4 dark-middle" id="section2">
                                 <h3>R S V P</h3>
-                                <p>Please submit by <b>28th February</b>.</p>
+                                <p>Prosimy wypełnić przed <b>28 lutym.</b></p>
                                 <form id="rsvp-form" method="POST">
                                     <label>
                                         <input
                                             type="text"
                                             name="name-surname"
-                                            placeholder="Name & Surname"
+                                            placeholder="Imie i nazwisko"
                                         /> </label
                                     ><br />
                                     <label>
@@ -101,7 +103,7 @@
                                             type="number"
                                             name="quantity-adults"
                                             value="adults"
-                                            placeholder="Number of adults"
+                                            placeholder="Ilość dorosłych"
                                         /> </label
                                     ><br />
                                     <label>
@@ -109,48 +111,36 @@
                                             type="number"
                                             name="quantity-children"
                                             value="children"
-                                            placeholder="Number of children"
+                                            placeholder="Ilość dzieci"
                                         /> </label
                                     ><br />
                                     <label>
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            placeholder="Email address"
-                                        />
+                                        <input type="email" name="email" placeholder="Email" />
                                     </label>
                                     <br />
-                                    <label>
-                                        <input
-                                            type="text"
-                                            name="accomodation-required"
-                                            placeholder="Do you require accomodation?"
-                                        />
-                                    </label>
-                                    <br />
+                                    <!--accomodation was here -->
+
                                     <label
                                         ><input
                                             type="text"
                                             name="diet-requirements"
-                                            placeholder="Dietary requirements / allergies"
+                                            placeholder="Alergie / wymagania dietetyczne"
                                     /></label>
                                     <br />
                                     <input type="radio" name="ifcoming" value="accept" checked />
-                                    <label> Wouldn't miss it for the world! </label>
+                                    <label> Oczywiście, że będziemy! </label>
                                     <br />
                                     <input type="radio" name="ifcoming" value="decline" />
-                                    <label>
-                                        Will celebrate from afar and forever regret this decision
-                                    </label>
+                                    <label> Niestety nie damy rady... </label>
 
                                     <label>
-                                        <p>Anything else we should know?</p>
+                                        <p>Informacje dodatkowe</p>
                                         <textarea name="diet-req" value="diet-allergy"></textarea>
                                     </label>
                                     <br />
 
                                     <button id="btn-confirm" type="submit" value="SUBMIT">
-                                        SUBMIT
+                                        Wyślij
                                     </button>
                                 </form>
                                 <div><p id="submitted-form"></p></div>
@@ -162,39 +152,54 @@
                     <section id="bright-accomo">
                         <div class="container double">
                             <div class="col1-2 border-line">
-                                <h3 id="section3">Accommodation</h3>
+                                <h3 id="section3">Nocleg</h3>
                                 <div class="col1-2-text">
                                     <p>
-                                        If you would like to stay overnight, we can reserve a room
-                                        for you at the beautiful Channels Lodge, just a 2 minutes
-                                        walk from the venue.
+                                        Chcemy, żeby każdy z was był na weselu i staraliśmy się
+                                        ułatwić wam pobyt rezerwując hotel na nasz koszt koło
+                                        lotniska Stansted dla wszystkich przylatujących gości.
                                     </p>
 
                                     <p>
-                                        Double room with ensuite bathroom is £60 for our guests &
-                                        includes breakfast in the morning.
+                                        Prosimy tylko o kupienie biletów do lotniska Londyn Stansted
+                                        skąd Olivia (najprawdopobniej) was odbierze. Do hotelu
+                                        zawiezie nas lokalny autokar - koszt £4 dorośli, dzieci
+                                        ponizżj 16 lat jadą za darmo.
+                                    </p>
+
+                                    <p>
+                                        Nocleg jest zarezerwowany na dwie noce - od soboty do
+                                        poniedziałku. Hotel ma restauracje na parterze, posiłki
+                                        hotelowe nie są wliczone w cenę.
                                     </p>
 
                                     <br />
-                                    <p>Channels Lodge</p>
-                                    <p>Pratt's Farm Ln, Little Waltham, Chelmsford CM3 3PT</p>
+                                    <p>Holiday Inn</p>
+                                    <p>Thremhall Avenue, Stansted Airport, Stansted CM24 1PY</p>
                                     <img
-                                        src="Graphics/channelslodge.jpg"
+                                        src="/Graphics/StanstedInn.jpg"
                                         class="acc-img"
-                                        alt="Channels Lodge"
+                                        alt="Premier Inn"
                                     />
                                 </div>
                             </div>
                             <div class="col1-2">
-                                <h3 id="section5">How to get there</h3>
+                                <h3 id="section5">Mapa i transport</h3>
                                 <div class="col1-2-text">
                                     <p>
-                                        There is a free on-site parking for those choosing to drive.
+                                        Na niedzielę chcemy zarezerwować transport do Channels
+                                        Estate, gdzie odbywać będzie się wesele oraz transport z
+                                        powrotem do hotelu na 12 w nocy, kiedy wesela w Angli się
+                                        kończą.
                                     </p>
                                     <p>
-                                        Alternatively, you can travel to Chelmsford using public
-                                        transport then getting a taxi/Uber (10min) or a bus (about
-                                        30min).
+                                        Nie zapomnijcie wziąć wszystkiego czego potrzebujecie ze
+                                        soba, ponieważ nie planujemy dodatkowych podróży do lub z
+                                        hotelu przed zakonczeniem wesela. Polecamy zjesc śniadanie w
+                                        hotelu w niedzielę rano, obiad weselelny zaplanowany jest na
+                                        16:00, ale przed bedą też małe przekąski. Drinki i napoje do
+                                        19:00 bedą darmowe dla wszystkich gości, potem otwarty
+                                        będzie bar z płatnymi napojami.
                                     </p>
                                     <br />
                                     <p>Channels Weddings at Channels Estate</p>
@@ -217,13 +222,13 @@
                     <section id="dark-footer">
                         <div class="container-bottom" id="section4">
                             <p>
-                                Thank you for visiting. We look forward to spending our special day
-                                with you!
+                                Dzękujemy za wizytę. Nie możemy się doczekać spędzenia z wami
+                                naszego specjalnego dnia!
                             </p>
                             <p>
-                                If you have any questions, please do not hesitate to
+                                Jeśli masz pytania, możesz napisać do nas maila
                                 <a href="mailto:kegvia@gmail.com?subject=Wedding Query"
-                                    ><b>email us</b></a
+                                    ><b>tutaj</b></a
                                 >.
                             </p>
                         </div>
