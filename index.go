@@ -23,7 +23,7 @@ func main() {
 		fmt.Printf("received form %+v \n", r.PostForm)
 	})
 	fmt.Println("listening")
-	if err := http.ListenAndServe("127.0.0.1:5501", nil); err != nil {
+	if err := http.ListenAndServe("0.0.0.0:1906", nil); err != nil {
 		panic(err)
 	}
 }

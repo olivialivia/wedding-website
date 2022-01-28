@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
     let btn1 = document.getElementById("btn-confirm");
 
     btn1.addEventListener("click", async (event) => {
-        log.textContent = "Thank you for submitting the form!";
+        log.textContent = "Dziękujemy za wypełnienie!";
         event.preventDefault();
         const formData = new FormData(form);
 
@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
             });
             success = response.ok;
         } catch (err) {
-            console.log("request errpr", err);
+            console.log("request error", err);
         }
 
         if (!success) {
