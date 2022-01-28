@@ -118,12 +118,19 @@ body {
 .container-bottom {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+.info-bottom {
+    align-content: center;
+    padding: 0 10% 0 10%;
 }
 
 ul {
     display: inline-block; 
     list-style: none;
 	text-align: left;
+    color: rgba(20, 20, 20);
+    font-weight: 300;
     margin: 0px 0px; 
     padding-inline-start: 25px;
 }
@@ -163,6 +170,7 @@ textarea {
 }
 
 .acc-img {
+    min-width: 350px;
     max-width: 75%;
 }
 #map {
@@ -201,7 +209,7 @@ h3 {
 
 label,
 p {
-    color: rgba(20, 20, 20) ;
+    color: rgba(20, 20, 20);
     font-weight: 300;
 }
 .small-print {
@@ -225,7 +233,7 @@ a:hover {
         background-image: url(./Graphics/background-mobile.jpeg);   
         background-size: 100% auto;
         height: 0;
-        padding-top: 120%;
+        padding-top: 130%;
         background-repeat: no-repeat;
     }
    
