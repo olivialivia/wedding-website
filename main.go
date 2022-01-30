@@ -38,7 +38,7 @@ func main() {
 		}
 		fmt.Printf("received form %+v \n", string(body))
 		now := time.Now()
-		timestr := now.Format("2006-01-02-15-04-05-000")
+		timestr := now.Format("2006-01-02-15-04-05.000")
 		filename := fmt.Sprintf("./forms/%s.json", timestr)
 		if err = ioutil.WriteFile(filename, body, os.ModePerm); err != nil {
 			rw.WriteHeader(500)
