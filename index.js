@@ -11,7 +11,7 @@ window.addEventListener("load", function () {
         let success = false;
 
         try {
-            let response = await fetch("http://localhost:1906/_wedding/submit", {
+            let response = await fetch("https://dendrite.kegsay.com/_wedding/submit", {
                 method: "POST",
                 body: formData,
             });
