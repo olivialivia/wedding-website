@@ -4,7 +4,6 @@ window.addEventListener("load", function () {
     let btn1 = document.getElementById("btn-confirm");
 
     btn1.addEventListener("click", async (event) => {
-        log.textContent = "Dziękujemy za wypełnienie!";
         event.preventDefault();
         const formData = new FormData(form);
 
@@ -23,6 +22,8 @@ window.addEventListener("load", function () {
         if (!success) {
             log.textContent =
                 "Wystąpił problem. Spróbuj jeszcze raz lub skontaktuj się z nami poniżej.";
+        } else {
+            log.textContent = "Dziękujemy za wypełnienie!";
         }
     });
 });

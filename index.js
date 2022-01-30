@@ -4,7 +4,6 @@ window.addEventListener("load", function () {
     let btn1 = document.getElementById("btn-confirm");
 
     btn1.addEventListener("click", async (event) => {
-        log.textContent = "Thank you for submitting the form!";
         event.preventDefault();
         const formData = new FormData(form);
 
@@ -22,6 +21,8 @@ window.addEventListener("load", function () {
 
         if (!success) {
             log.textContent = "There was a problem submitting the form. Please retry or email us.";
+        } else {
+            log.textContent = "Thank you for submitting the form!";
         }
     });
 });
