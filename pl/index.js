@@ -11,7 +11,7 @@ window.addEventListener("load", function () {
         let success = false;
 
         try {
-            let response = await fetch("http://127.0.0.1:5501/submit", {
+            let response = await fetch("http://localhost:1906/_wedding/submit", {
                 method: "POST",
                 body: formData,
             });
@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
 
         if (!success) {
             log.textContent =
-                "Wystąpił problem. Spróbuj wysłać jeszcze raz lub skontaktuj się z nami poniżej.";
+                "Wystąpił problem. Spróbuj jeszcze raz lub skontaktuj się z nami poniżej.";
         }
     });
 });
