@@ -3,6 +3,24 @@ window.addEventListener("load", function () {
     let log = document.getElementById("submitted-form");
     let btn1 = document.getElementById("btn-confirm");
 
+    let declined = document.getElementById("declined");
+    declined.addEventListener("change", (event) => {
+        let inputs = document.getElementsByClassName("accept-inputs");
+        for (let i = 0; i < inputs.length; i++) {
+            let input = inputs[i];
+            input.setAttribute("disabled", "");
+        }
+    });
+
+    let accepted = document.getElementById("accepted");
+    accepted.addEventListener("change", (event) => {
+        let inputs = document.getElementsByClassName("accept-inputs");
+        for (let i = 0; i < inputs.length; i++) {
+            let input = inputs[i];
+            input.removeAttribute("disabled");
+        }
+    });
+
     btn1.addEventListener("click", async (event) => {
         event.preventDefault();
         const formData = new FormData(form);

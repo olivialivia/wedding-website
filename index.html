@@ -97,26 +97,18 @@
                                     <label>
                                         <input
                                             type="text"
-                                            name="name-surname"
-                                            placeholder="Name & Surname"
+                                            name="name-surname-ad1"
+                                            placeholder="Adult 1: Name & Surname"
                                         /> </label
                                     ><br />
                                     <label>
                                         <input
-                                            type="number"
-                                            name="quantity-adults"
-                                            value="adults"
-                                            placeholder="Number of adults"
-                                        /> </label
-                                    ><br />
-                                    <label>
-                                        <input
-                                            type="number"
-                                            name="quantity-children"
-                                            value="children"
-                                            placeholder="Number of children"
-                                        /> </label
-                                    ><br />
+                                            type="text"
+                                            name="name-surname-ad2"
+                                            placeholder="Adult 2: Name & Surname (if applicable)"
+                                        />
+                                    </label>
+                                    <br />
                                     <label>
                                         <input
                                             type="email"
@@ -125,8 +117,41 @@
                                         />
                                     </label>
                                     <br />
+
+                                    <input
+                                        id="accepted"
+                                        type="radio"
+                                        name="ifcoming"
+                                        value="accept"
+                                        checked
+                                    />
+                                    <label> ACCEPT: Wouldn't miss it for the world! </label>
+                                    <br />
+                                    <input
+                                        id="declined"
+                                        type="radio"
+                                        name="ifcoming"
+                                        value="decline"
+                                    />
+                                    <label>
+                                        DECLINE: Will celebrate from afar and forever regret this
+                                        decision
+                                    </label>
+
+                                    <br /><br />
                                     <label>
                                         <input
+                                            class="accept-inputs"
+                                            type="number"
+                                            name="quantity-children"
+                                            value="children"
+                                            placeholder="Number of children (if applicable)"
+                                        />
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input
+                                            class="accept-inputs"
                                             type="text"
                                             name="accomodation-required"
                                             placeholder="Do you require accomodation?"
@@ -135,22 +160,24 @@
                                     <br />
                                     <label
                                         ><input
+                                            class="accept-inputs"
                                             type="text"
                                             name="diet-requirements"
                                             placeholder="Dietary requirements / allergies"
                                     /></label>
                                     <br />
-                                    <input type="radio" name="ifcoming" value="accept" checked />
-                                    <label> Wouldn't miss it for the world! </label>
-                                    <br />
-                                    <input type="radio" name="ifcoming" value="decline" />
                                     <label>
-                                        Will celebrate from afar and forever regret this decision
+                                        <input
+                                            class="accept-inputs"
+                                            type="text"
+                                            name="song-request"
+                                            placeholder="I promise to dance if you play...  ♫ ♪"
+                                        />
                                     </label>
 
                                     <label>
                                         <p>Anything else we should know?</p>
-                                        <textarea name="notes" value="diet-allergy"></textarea>
+                                        <textarea name="notes" value="additional-notes"></textarea>
                                     </label>
                                     <br />
 

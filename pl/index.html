@@ -106,53 +106,76 @@
                                     <label>
                                         <input
                                             type="text"
-                                            name="name-surname"
-                                            placeholder="Imię i nazwisko"
+                                            name="name-surname-ad1"
+                                            placeholder="Dorosły 1: Imię i nazwisko"
                                         /> </label
                                     ><br />
                                     <label>
                                         <input
-                                            type="number"
-                                            name="quantity-adults"
-                                            value="adults"
-                                            placeholder="Ilość dorosłych"
-                                        /> </label
-                                    ><br />
-                                    <label>
-                                        <input
-                                            type="number"
-                                            name="quantity-children"
-                                            value="children"
-                                            placeholder="Ilość dzieci"
-                                        /> </label
-                                    ><br />
+                                            type="text"
+                                            name="name-surname-ad2"
+                                            placeholder="Dorosły 2: Imię i nazwisko"
+                                        />
+                                    </label>
+                                    <br />
                                     <label>
                                         <input type="email" name="email" placeholder="Email" />
                                     </label>
                                     <br />
-                                    <!--accomodation was here -->
 
+                                    <input
+                                        id="accepted"
+                                        type="radio"
+                                        name="ifcoming"
+                                        value="accept"
+                                        checked
+                                    />
+                                    <label> POTWIERDZAM: Oczywiście, że będziemy! </label>
+                                    <br />
+                                    <input
+                                        id="declined"
+                                        type="radio"
+                                        name="ifcoming"
+                                        value="decline"
+                                    />
+                                    <label> ODMAWIAM: Niestety nie damy rady... </label>
+
+                                    <br /><br />
+                                    <label>
+                                        <input
+                                            class="accept-inputs"
+                                            type="number"
+                                            name="quantity-children"
+                                            value="children"
+                                            placeholder="Ilość dzieci"
+                                        />
+                                    </label>
+                                    <br />
                                     <label
                                         ><input
+                                            class="accept-inputs"
                                             type="text"
                                             name="diet-requirements"
                                             placeholder="Alergie / wymagania dietetyczne"
                                     /></label>
                                     <br />
-                                    <input type="radio" name="ifcoming" value="accept" checked />
-                                    <label> Oczywiście, że będziemy! </label>
-                                    <br />
-                                    <input type="radio" name="ifcoming" value="decline" />
-                                    <label> Niestety nie damy rady... </label>
+                                    <label>
+                                        <input
+                                            class="accept-inputs"
+                                            type="text"
+                                            name="song-request"
+                                            placeholder="Na tej piosence na pewno będę na parkiecie...  ♫ ♪"
+                                        />
+                                    </label>
 
                                     <label>
                                         <p>Informacje i wiadomości dodatkowe:</p>
-                                        <textarea name="notes" value="diet-allergy"></textarea>
+                                        <textarea name="notes" value="additional-notes"></textarea>
                                     </label>
                                     <br />
 
                                     <button id="btn-confirm" type="submit" value="SUBMIT">
-                                        Wyślij
+                                        WYŚLIJ
                                     </button>
                                 </form>
                                 <div><p id="submitted-form"></p></div>
@@ -242,7 +265,7 @@
                                     opisanych jest na<br />
                                     <a
                                         href="https://101countriesbefore50.com/anglia/londyn-na-weekend/"
-                                        >tej stronie</a
+                                        ><b>tej stronie</b></a
                                     >.
                                 </p>
                                 <p>
@@ -250,12 +273,12 @@
                                     Westminster & Big Ben (wieża zegarowa aktualnie w remoncie),
                                     Natural History Museum, Science Museum, Oxford Street na zakupy,
                                     Hyde Park, Richmond Park, The Sky Gardens. <br />Ulubione
-                                    płatne: Tower of London, Sea Life, West End Shows (Musicale i
-                                    sztuki teatralne), <br />
+                                    płatne: Tower of London, Sea Life, West End (musicale i teatry),
+                                    <br />
                                 </p>
                                 <p>
-                                    Nie możemy się doczekać spędzenia z wami wyjątkowego dla nas
-                                    dnia!
+                                    Nie możemy się doczekać spędzenia z wami tego wyjątkowego dla
+                                    nas dnia!
                                 </p>
                                 <p>
                                     Jeśli masz pytania, możesz napisać
