@@ -10,7 +10,7 @@ body {
 
 #bright-details {
     background-image: rgb(245, 245, 245);
-    margin: 70px 0px 90px 0px;
+    margin: 65px 0px 90px 0px;
 }
 #bright-accomo {
     background-color: rgb(245, 245, 245);
@@ -47,10 +47,10 @@ body {
 
 
 .picture-top {
-    background-image: url(./Graphics/background.jpeg); 
+    background-image: url(./Graphics/20220130.jpeg); 
     background-size: 100% auto;
     height: 1;
-    padding-top: 50%;
+    padding-top: 55%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -103,16 +103,6 @@ body {
 
 .dark-middle {
     background-color: rgba(238, 240, 238, 0.897);
-}
-
-.left-img {
-    background-image: url(./Graphics/view-left.jpeg);
-    background-position: left;
-}
-
-.right-img {
-    background-image: url(./Graphics/view-right.jpeg);
-    background-position: right;
 }
 
 .container-bottom {
@@ -229,10 +219,10 @@ a:hover {
 
 @media (max-width: 800px) {
     .picture-top {
-        background-image: url(./Graphics/background-mobile.jpeg);   
+        background-image: url(./Graphics/20220130M.jpeg);   
         background-size: 100% auto;
         height: 0;
-        padding-top: 130%;
+        padding-top: 120%;
         background-repeat: no-repeat;
     }
    
