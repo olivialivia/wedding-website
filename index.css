@@ -225,10 +225,14 @@ a:hover {
         padding-top: 120%;
         background-repeat: no-repeat;
     }
+
+    .header-top {
+        padding-bottom: 8px;
+    }
    
     .nav-item {
         font-size: 1rem;
-        padding: 5px 5px 5px 5px;
+        padding: 6px 5px 6px 5px;
         flex: 1 1 20%;
         text-transform: uppercase;
     }
