@@ -42,6 +42,7 @@ window.addEventListener("load", function () {
                 "Wystąpił problem. Spróbuj jeszcze raz lub skontaktuj się z nami poniżej.";
         } else {
             log.textContent = "Dziękujemy za wypełnienie!";
+            document.getElementById("rsvp-form").reset();
             btn1.setAttribute("disabled", "");
         }
     });

@@ -41,6 +41,7 @@ window.addEventListener("load", function () {
             log.textContent = "There was a problem submitting the form. Please retry or email us.";
         } else {
             log.textContent = "Thank you for submitting the form!";
+            document.getElementById("rsvp-form").reset();
             btn1.setAttribute("disabled", "");
         }
     });
